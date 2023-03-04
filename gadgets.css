@@ -1,0 +1,189 @@
+body{
+	margin:0;
+	padding:0;
+	font-family:"arial",heletica,sans-serif;
+	font-size:12px;
+    background: #f1838e url('https://p4.wallpaperbetter.com/wallpaper/457/939/821/bright-pink-abstract-geometric-triangle-wallpaper-preview.jpg') repeat 0 0;
+	-webkit-animation: 10s linear 0s normal none infinite animate;
+	-moz-animation: 10s linear 0s normal none infinite animate;
+	-ms-animation: 10s linear 0s normal none infinite animate;
+	-o-animation: 10s linear 0s normal none infinite animate;
+	animation: 10s linear 0s normal none infinite animate;
+}
+ 
+
+@keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;}
+}
+
+
+.title {
+    font-style: oblique;
+    text-align: center;
+    color: white;
+    font-size: 100px;
+    font-weight: bold; 
+}
+
+.score {
+    position: absolute;
+    width: 300px;
+    font-style: oblique;
+    text-align: center;
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+    top: 5%;
+    right: 53%;
+    /*background-image: var(--gradient);*/
+
+    /*background-color: #c71212;*/
+    animation: degraded 15s ease 0s infinite;
+
+}
+
+.movements {
+    position: absolute;
+    width: 200px;
+    font-style: oblique;
+    text-align: left;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    top: 0%;
+    left: 1%;
+
+}
+
+.movements-count {
+    position: absolute;
+    width: 200px;
+    font-style: oblique;
+    text-align: left;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    top: 0.2%;
+    left: 15%;
+
+}
+
+.timer {
+    position: absolute;
+    width: 200px;
+    font-style: oblique;
+    text-align: left;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    top: 10%;
+    left: 1%;  
+}
+
+.time {
+    position: absolute;
+    width: 200px;
+    font-style: oblique;
+    text-align: left;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    top: 10.2%;
+    left: 9%;
+}
+
+.points {
+    position: absolute;
+    width: 200px;
+    font-style: oblique;
+    text-align: left;
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+    top: 5%;
+    right: 40%;
+
+
+    animation: degraded 15s ease 0s infinite;   
+}
+
+
+.reset {
+    position: absolute;
+    border-style: solid;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 70px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+    /*width:200;*/
+    background-color: red;
+    top: 3%;
+    right: 2%;
+}
+
+.container {
+    position: absolute;
+    top: 22%;
+    left: 30%;
+    width: 650px;
+    height: 650px;
+    margin: 10px auto;
+    background: #f6b5a7;
+}
+
+.box {
+    background: #f1838e;
+    border: "montserray", sans-serif;
+    text-transform: uppercase;
+    height: 142px;
+    width: 142px;
+    margin: 10px;
+    float: left;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    line-height: 110px; 
+
+}
+
+.gameOver {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.gameOverContent {
+    background-color: #f1838e;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+  }
+
+
+@keyframes degraded {
+    0%{background:red;}
+    25%{background:#ed55db;}
+    50%{background:#e73c7e;}
+    75%{background:#f584d0;}
+    100%{background:red;}
+}

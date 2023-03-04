@@ -1,0 +1,50 @@
+<html>
+ 
+<head>
+    <title>"2048"</title>
+    <link rel = "stylesheet" href = "gadgets.css"></link>
+</head>
+ 
+<body style="background-color: orchid;">
+    <h1 class="title"> 2048</h1>
+    <h1 class="score"> Score: </h1>
+    <h1 class="movements"> Movements: </h1>
+    <h1 class="movements-count" id="move"> 0 </h1>
+    <h1 class="Timer">Timer:</h1>
+    <h1 class="time" id="tiempo"> 00:00:00.000</h1>
+    <h1 class="points" id = "0"> 100 </h1>
+    <h1 class="reset" id = "reset" onclick="functionReset()"> Restart </h1>
+    
+    <audio id="audio" src="pov.mp3"></audio>
+
+
+    <section class="container" id = "container">
+        <div class = "box" id="1"></div>
+        <div class = "box" id="2"></div>
+        <div class = "box" id="3"></div>
+        <div class = "box" id="4"></div>
+        <div class = "box" id="5"></div>
+        <div class = "box" id="6"></div>
+        <div class = "box" id="7"></div>
+        <div class = "box" id="8"></div>
+        <div class = "box" id="9"></div>
+        <div class = "box" id="10"></div>
+        <div class = "box" id="11"></div>
+        <div class = "box" id="12"></div>
+        <div class = "box" id="13"></div>
+        <div class = "box" id="14"></div>
+        <div class = "box" id="15"></div>
+        <div class = "box" id="16"></div>
+    </section>
+
+
+    <div id = "Game Over" class="gameOver">
+        <div class="gameOverContent">
+        <p id = "stats">GAME OVER</p>
+        </div>
+    </div>
+
+</body>
+<script src = "source.js"></script> 
+
+</html>
